@@ -52,12 +52,15 @@ def enrich_matches(
         def calculate_outcome(row):
             home_id = row.get("home_team_id")
             away_id = row.get("away_team_id")
-            home_goals = row.get("home_goals", 0)
-            away_goals = row.get("away_goals", 0)
-            
+            home_goals = row.get("home_goals")
+            away_goals = row.get("away_goals")
+
+            # Pelaamaton ottelu (puuttuvat joukkueet tai maalit) -> None
             if pd.isna(home_id) or pd.isna(away_id):
                 return None
-            
+            if pd.isna(home_goals) or pd.isna(away_goals):
+                return None
+
             if home_id == selected_team_id:
                 goals_for = home_goals
                 goals_against = away_goals
@@ -66,7 +69,7 @@ def enrich_matches(
                 goals_against = home_goals
             else:
                 return None
-            
+
             if goals_for > goals_against:
                 return "W"
             elif goals_for < goals_against:
@@ -77,27 +80,31 @@ def enrich_matches(
         def calculate_goals_for(row):
             home_id = row.get("home_team_id")
             away_id = row.get("away_team_id")
-            home_goals = row.get("home_goals", 0)
-            away_goals = row.get("away_goals", 0)
-            
+            home_goals = row.get("home_goals")
+            away_goals = row.get("away_goals")
+
             if pd.isna(home_id) or pd.isna(away_id):
                 return None
-            
+            if pd.isna(home_goals) or pd.isna(away_goals):
+                return None
+
             if home_id == selected_team_id:
                 return home_goals
             elif away_id == selected_team_id:
                 return away_goals
             return None
-        
+
         def calculate_goals_against(row):
             home_id = row.get("home_team_id")
             away_id = row.get("away_team_id")
-            home_goals = row.get("home_goals", 0)
-            away_goals = row.get("away_goals", 0)
-            
+            home_goals = row.get("home_goals")
+            away_goals = row.get("away_goals")
+
             if pd.isna(home_id) or pd.isna(away_id):
                 return None
-            
+            if pd.isna(home_goals) or pd.isna(away_goals):
+                return None
+
             if home_id == selected_team_id:
                 return away_goals
             elif away_id == selected_team_id:
