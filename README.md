@@ -1,8 +1,18 @@
-> **HISTORIALLINEN DOKUMENTTI.** Ajantasainen tila: `docs/STATUS.md`.
+> **HISTORIALLINEN DOKUMENTTI.** Ajantasainen tila: [docs/STATUS.md](docs/STATUS.md).
 
 # 🏒 Mailajoket Tilastoselain
 
 Streamlit-webappi Mailajokkejen jääkiekon tilastojen selailuun vuosilta 2014-2025.
+
+## Dokumentaatio
+
+| Dokumentti | Sisältö |
+|---|---|
+| [docs/STATUS.md](docs/STATUS.md) | Ajantasainen tila — tilannetaulukko, mitä seuraavaksi, avoimet päätökset. Luetaan ensin. |
+| [docs/CHANGELOG.md](docs/CHANGELOG.md) | Muutoshistoria kuukausittain, uusin ylimpänä, mitä tehtiin ja miksi sillä oli väliä. |
+| [CLAUDE.md](CLAUDE.md) | Ylläpito-ohjeet projektissa työskenteleville agenteille/kehittäjille. |
+| [DEPLOYMENT.md](DEPLOYMENT.md) | Streamlit Cloud -julkaisuohje. Historiallinen, sisältää vanhentuneita polkuja. |
+| [GITHUB_PUSH.md](GITHUB_PUSH.md) | GitHub-remoten lisäysohje. Historiallinen, remote on jo olemassa. |
 
 ## Paikallinen asennus
 
