@@ -1,3 +1,5 @@
+> **HISTORIALLINEN DOKUMENTTI.** Ajantasainen tila: `docs/STATUS.md`.
+
 # 🚀 Streamlit Cloud -deployment ohjeet
 
 ## Vaihe 1: GitHub-repositorio

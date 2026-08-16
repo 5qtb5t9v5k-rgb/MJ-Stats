@@ -1,3 +1,5 @@
+> **HISTORIALLINEN DOKUMENTTI.** Ajantasainen tila: `docs/STATUS.md`.
+
 # 🚀 GitHub Push -ohjeet
 
 ## Nopea tapa (skripti)

@@ -1,3 +1,5 @@
+> **HISTORIALLINEN DOKUMENTTI.** Ajantasainen tila: `docs/STATUS.md`.
+
 # 🏒 Mailajoket Tilastoselain
 
 Streamlit-webappi Mailajokkejen jääkiekon tilastojen selailuun vuosilta 2014-2025.
